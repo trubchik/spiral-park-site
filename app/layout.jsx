@@ -5,10 +5,11 @@ export const metadata = {
   description: 'Живое пространство на Мадейре',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout(props) {
   return (
     <html lang="ru">
-      <body>{children}</body>
+      <head />
+      <body>{props.children}</body>
     </html>
   );
 }
